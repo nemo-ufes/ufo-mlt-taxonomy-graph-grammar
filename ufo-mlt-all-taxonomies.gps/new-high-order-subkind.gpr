@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="new-high-order-subkind">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n0">
+            <attr name="layout">
+                <string>87 255 61 17</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>340 254 102 17</string>
+            </attr>
+        </node>
+        <node id="n11">
+            <attr name="layout">
+                <string>81 41 74 17</string>
+            </attr>
+        </node>
+        <node id="n12">
+            <attr name="layout">
+                <string>65 145 102 17</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>352 39 74 17</string>
+            </attr>
+        </node>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>new:</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:SubKind</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n1">
+            <attr name="label">
+                <string>new:categorizes</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n12">
+            <attr name="label">
+                <string>new:subClassOf</string>
+            </attr>
+            <attr name="layout">
+                <string>577 -1 122 264 116 153 11</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:EndurantType</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n2">
+            <attr name="label">
+                <string>subClassOf+</string>
+            </attr>
+            <attr name="layout">
+                <string>646 1 389 251 389 59 11</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>type:BasicType</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n2">
+            <attr name="label">
+                <string>powertypeOf</string>
+            </attr>
+            <attr name="layout">
+                <string>514 0 118 49 370 48 11</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>type:EndurantType</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n11">
+            <attr name="label">
+                <string>subClassOf+</string>
+            </attr>
+            <attr name="layout">
+                <string>580 -2 118 142 118 61 11</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:BasicType</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

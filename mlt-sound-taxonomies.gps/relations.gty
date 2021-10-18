@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="type" edgeids="false" edgemode="directed" id="relations">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n1">
+            <attr name="layout">
+                <string>207 206 74 17</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>228 134 35 17</string>
+            </attr>
+        </node>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:BasicType</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n3">
+            <attr name="label">
+                <string>sub:</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>powertypeOf</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 244 214 134 216 244 214 13</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:Type</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>categorizes</string>
+            </attr>
+            <attr name="layout">
+                <string>500 9 245 142 120 139 245 142 13</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>instanceOf</string>
+            </attr>
+            <attr name="layout">
+                <string>500 9 245 142 120 139 245 142 13</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>subClassOf</string>
+            </attr>
+            <attr name="layout">
+                <string>500 9 245 142 120 139 245 142 13</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

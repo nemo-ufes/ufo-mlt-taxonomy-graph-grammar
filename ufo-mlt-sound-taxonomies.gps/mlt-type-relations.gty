@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="type" edgeids="false" edgemode="directed" id="mlt-type-relations">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n1">
+            <attr name="layout">
+                <string>402 168 74 17</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>297 84 35 17</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>166 164 102 17</string>
+            </attr>
+        </node>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:BasicType</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n3">
+            <attr name="label">
+                <string>sub:</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>powertypeOf</string>
+            </attr>
+            <attr name="layout">
+                <string>500 -1 439 176 336 175 439 176 13</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>abs:type:Type</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:EndurantType</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n3">
+            <attr name="label">
+                <string>sub:</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n3">
+            <attr name="label">
+                <string>subClassOf</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 217 172 221 94 314 92 11</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>categorizes</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 217 172 101 177 217 172 13</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>instanceOf</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 217 172 101 177 217 172 13</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="classification-of-type">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n1">
+            <attr name="layout">
+                <string>384 329 35 17</string>
+            </attr>
+        </node>
+        <node id="n12">
+            <attr name="layout">
+                <string>94 237 35 17</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>382 236 35 17</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>94 136 35 17</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>384 137 35 17</string>
+            </attr>
+        </node>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:Type</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n12">
+            <attr name="label">
+                <string>new:instanceOf</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n3">
+            <attr name="label">
+                <string>subClassOf+</string>
+            </attr>
+            <attr name="layout">
+                <string>585 -6 401 337 399 244 11</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n0">
+            <attr name="label">
+                <string>not:!instanceOf</string>
+            </attr>
+            <attr name="layout">
+                <string>711 3 401 337 443 302 442 225 111 144 11</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>type:Type</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n0">
+            <attr name="label">
+                <string>not:subClassOf+</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n3">
+            <attr name="label">
+                <string>categorizes</string>
+            </attr>
+            <attr name="layout">
+                <string>507 -2 111 245 399 244 11</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:Type</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:Type</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n2">
+            <attr name="label">
+                <string>not:categorizes</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:Type</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

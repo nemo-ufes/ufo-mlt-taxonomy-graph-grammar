@@ -1,0 +1,30 @@
+Groovy outcome:
+
+Running script: analysis
+
+State count: 359922
+
+1 states with 0 nodes.
+2 states with 1 nodes.
+5 states with 2 nodes.
+11 states with 3 nodes.
+24 states with 4 nodes.
+48 states with 5 nodes.
+359831 states with 6 nodes.
+
+Violators: [partition-instances-violating-disjointness:[s211099, s269356, s269360, s311570]]
+
+Saving violating states to files:
+
+  --> Saved file: s211099.gst
+  --> Saved file: s269356.gst
+  --> Saved file: s269360.gst
+  --> Saved file: s311570.gst
+
+Traces:
+  --> Trace for state s211099: [s0, --new-firstOT-->, s1, --new-firstOT-->, s4, --new-firstOT-->, s12, --new-firstOT-->, s31, --new-firstOT-->, s72, --partition-->, s159, --specialization-->, s662, --instantiation-->, s3315, --specialization-->, s12917, --instantiation-->, s37406, --specialization-->, s82135, --specialization-->, s144185, --specialization-->, s211099]
+  --> Trace for state s269356: [s0, --new-firstOT-->, s1, --new-firstOT-->, s4, --new-firstOT-->, s12, --new-firstOT-->, s31, --new-firstOT-->, s72, --partition-->, s159, --specialization-->, s662, --instantiation-->, s3315, --specialization-->, s12917, --instantiation-->, s37406, --specialization-->, s82134, --specialization-->, s144172, --specialization-->, s211075, --specialization-->, s269356]
+  --> Trace for state s269360: [s0, --new-firstOT-->, s1, --new-firstOT-->, s4, --new-firstOT-->, s12, --new-firstOT-->, s31, --new-firstOT-->, s72, --partition-->, s159, --specialization-->, s662, --instantiation-->, s3315, --specialization-->, s12917, --instantiation-->, s37406, --specialization-->, s82134, --specialization-->, s144173, --specialization-->, s211078, --specialization-->, s269360]
+  --> Trace for state s311570: [s0, --new-firstOT-->, s1, --new-firstOT-->, s4, --new-firstOT-->, s12, --new-firstOT-->, s31, --new-firstOT-->, s72, --partition-->, s159, --specialization-->, s662, --instantiation-->, s3315, --specialization-->, s12917, --instantiation-->, s37406, --specialization-->, s82134, --specialization-->, s144171, --specialization-->, s211066, --specialization-->, s269342, --specialization-->, s311570]
+
+** Total Running Time (ms):	135063

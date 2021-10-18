@@ -1,0 +1,6 @@
+new-antirigid-nonsortal | new-antirigid-sortal | new-category | new-kind | new-mixin | new-subkind;
+new-antirigid-nonsortal | new-antirigid-sortal | new-category | new-kind | new-mixin | new-subkind;
+new-antirigid-nonsortal | new-antirigid-sortal | new-category | new-kind | new-mixin | new-subkind;
+new-antirigid-nonsortal | new-antirigid-sortal | new-category | new-kind | new-mixin | new-subkind;
+new-antirigid-nonsortal | new-antirigid-sortal | new-category | new-kind | new-mixin | new-subkind;
+alap (antirigid-nonsortal-specialization | antirigid-sortal-generalization | category-specialization | mixin-specialization | subkind-generalization);
