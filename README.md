@@ -9,10 +9,11 @@
   * mlt-all-taxonomies.gps
   * ufo-mlt-sound-taxonomies.gps
   * ufo-mlt-all-taxonomies.gps
-* One bash script to run the experiments with the grammars
-  * GroovyChecker.sh
-* [GROOVE](https://sourceforge.net/projects/groove/) software needed to run the bash script
-  * groove-dev
+
+## Requirements
+
+* GROOVE 5.8.1 or latter
+* Java 8
 
 ## Selecting the number of types in each modeled taxonomy
 
@@ -28,4 +29,4 @@ To select the _control program_ to be used, one can either:
 
 Having selected the __number of types__ in each taxonomy for the experiments, to run them, in a Linux system, open a terminal in the root directory of this repo and run the following command:
 
-./GroovyChecker.sh -p analysis -g `grammar`, where `grammar` is the folder of the grammar to be tested.
+java -jar $GROOVE/bin/GroovyChecker.jar -p analysis -g `grammar`, where $GROOVE is the extracted GROOVE folder and `grammar` is the folder of the grammar to be tested.
