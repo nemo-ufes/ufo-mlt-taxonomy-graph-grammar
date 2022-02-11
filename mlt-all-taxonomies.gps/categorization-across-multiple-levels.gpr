@@ -34,14 +34,14 @@
                 <string>type:Type</string>
             </attr>
         </edge>
-        <edge from="n0" to="n2">
-            <attr name="label">
-                <string>subClassOf+</string>
-            </attr>
-        </edge>
         <edge from="n0" to="n1">
             <attr name="label">
                 <string>categorizes</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n2">
+            <attr name="label">
+                <string>subClassOf+</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">

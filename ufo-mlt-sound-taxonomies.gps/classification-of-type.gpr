@@ -21,20 +21,22 @@
         </node>
         <node id="n0">
             <attr name="layout">
-                <string>134 93 35 17</string>
+                <string>100 93 102 17</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>134 254 33 17</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>134 327 33 17</string>
             </attr>
         </node>
         <edge from="n1" to="n1">
             <attr name="label">
                 <string>type:EndurantType</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n0">
-            <attr name="label">
-                <string>not:!instanceOf</string>
-            </attr>
-            <attr name="layout">
-                <string>711 3 441 294 514 254 514 182 151 101 11</string>
             </attr>
         </edge>
         <edge from="n1" to="n12">
@@ -48,6 +50,19 @@
             </attr>
             <attr name="layout">
                 <string>585 -6 441 294 439 201 11</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n0">
+            <attr name="label">
+                <string>not:!instanceOf</string>
+            </attr>
+            <attr name="layout">
+                <string>711 3 441 294 514 254 514 182 151 101 11</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n4">
+            <attr name="label">
+                <string>not:instanceOf</string>
             </attr>
         </edge>
         <edge from="n12" to="n12">
@@ -68,6 +83,11 @@
                 <string>507 -2 151 202 439 201 11</string>
             </attr>
         </edge>
+        <edge from="n12" to="n2">
+            <attr name="label">
+                <string>=</string>
+            </attr>
+        </edge>
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>type:EndurantType</string>
@@ -81,6 +101,31 @@
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>type:EndurantType</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:Kind</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n4">
+            <attr name="label">
+                <string>not:!=</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:Kind</string>
             </attr>
         </edge>
     </graph>

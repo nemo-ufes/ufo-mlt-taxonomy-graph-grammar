@@ -1,60 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="new-highOT">
+    <graph role="rule" edgeids="false" edgemode="directed" id="reverse-instantiation">
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>141 208 35 17</string>
+                <string>51 191 102 17</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>390 207 35 17</string>
+                <string>497 190 35 17</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>367 55 74 17</string>
+                <string>66 78 74 17</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>122 55 74 17</string>
-            </attr>
-        </node>
-        <node id="n4">
-            <attr name="layout">
-                <string>142 123 35 17</string>
+                <string>475 75 74 17</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
             <attr name="label">
-                <string>new:</string>
+                <string>type:EndurantType</string>
             </attr>
         </edge>
-        <edge from="n0" to="n4">
+        <edge from="n0" to="n2">
             <attr name="label">
-                <string>new:subClassOf</string>
+                <string>subClassOf+</string>
             </attr>
         </edge>
         <edge from="n0" to="n1">
             <attr name="label">
-                <string>new:categorizes</string>
-            </attr>
-        </edge>
-        <edge from="n0" to="n0">
-            <attr name="label">
-                <string>type:Type</string>
+                <string>instanceOf</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
             <attr name="label">
-                <string>type:Type</string>
+                <string>type:EndurantType</string>
             </attr>
         </edge>
-        <edge from="n1" to="n2">
+        <edge from="n1" to="n3">
             <attr name="label">
                 <string>subClassOf+</string>
             </attr>
@@ -64,24 +54,14 @@
                 <string>type:BasicType</string>
             </attr>
         </edge>
+        <edge from="n2" to="n3">
+            <attr name="label">
+                <string>powertypeOf+</string>
+            </attr>
+        </edge>
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>type:BasicType</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n2">
-            <attr name="label">
-                <string>powertypeOf</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n3">
-            <attr name="label">
-                <string>subClassOf*</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>type:Type</string>
             </attr>
         </edge>
     </graph>

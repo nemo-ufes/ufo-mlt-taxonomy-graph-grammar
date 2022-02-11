@@ -30,16 +30,19 @@ conditions = [
 	'categorization-across-multiple-levels',
 	'categorizing-more-than-a-type',
 	'different-basic-types-with-the-same-powertype',
+	'high-order-type-is-not-categorizer',
 	'instantiation-across-multiple-levels',
 	'instantiation-breaking-categorization',
 	'inter-level-specialization',
 	'intra-level-categorization',
 	'intra-level-instantiation',
 	'mutual-powertype-relation-between-basic-types',
+	'reverse-categorization',
+	'reverse-instantiation',
 	'specialization-violation',
 	'type-of-more-than-one-basic-type',
 	'type-of-no-basic-type',
-	'unrelated-basic-types',
+	'unrelated-basic-types'
 ];
 
 def violationCount = [0] * (NODE_COUNT_LIMIT);
@@ -47,7 +50,7 @@ for (state in states) {
 	for (transition in state.getTransitions()) {
 		if (conditions.contains(transition.text(false))) {
 		    // Detecting conditions
-		    // println('\nCondition detected: ' + transition.text(false));
+		    println('\nCondition detected: ' + transition.text(false));
 		    
 			def realNodeCount = 0;
 			for (node in state.getGraph().nodeSet()) {

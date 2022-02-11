@@ -44,14 +44,14 @@
                 <string>type:Type</string>
             </attr>
         </edge>
-        <edge from="n1" to="n3">
-            <attr name="label">
-                <string>subClassOf+</string>
-            </attr>
-        </edge>
         <edge from="n1" to="n0">
             <attr name="label">
                 <string>instanceOf</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n3">
+            <attr name="label">
+                <string>subClassOf+</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">

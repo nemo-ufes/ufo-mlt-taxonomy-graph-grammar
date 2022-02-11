@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="type-of-more-than-one-basic-type">
+    <graph role="rule" edgeids="false" edgemode="directed" id="reverse-categorization">
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>213 238 35 17</string>
+                <string>85 191 35 17</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>93 60 74 17</string>
+                <string>314 191 35 17</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>299 61 74 17</string>
+                <string>66 78 74 17</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>292 76 74 17</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -26,25 +31,35 @@
         </edge>
         <edge from="n0" to="n2">
             <attr name="label">
-                <string>subClassOf*</string>
+                <string>subClassOf+</string>
             </attr>
         </edge>
-        <edge from="n0" to="n1">
+        <edge from="n1" to="n3">
             <attr name="label">
-                <string>subClassOf*</string>
+                <string>subClassOf+</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n0">
+            <attr name="label">
+                <string>categorizes</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
             <attr name="label">
-                <string>type:BasicType</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n2">
-            <attr name="label">
-                <string>not:=</string>
+                <string>type:Type</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:BasicType</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n3">
+            <attr name="label">
+                <string>powertypeOf+</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
             <attr name="label">
                 <string>type:BasicType</string>
             </attr>

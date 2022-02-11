@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="high-order-type-is-not-categorizer">
-        <attr name="enabled">
-            <string>false</string>
-        </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -27,14 +24,14 @@
                 <string>388 60 74 17</string>
             </attr>
         </node>
-        <edge from="n0" to="n1">
-            <attr name="label">
-                <string>categorizes</string>
-            </attr>
-        </edge>
         <edge from="n0" to="n2">
             <attr name="label">
                 <string>subClassOf+</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n1">
+            <attr name="label">
+                <string>categorizes</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">
