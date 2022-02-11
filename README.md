@@ -2,13 +2,12 @@
 
 ## Content
 
-* 6 [GROOVE](https://sourceforge.net/projects/groove/) grammars
+* 5 [GROOVE](https://sourceforge.net/projects/groove/) grammars
   * ufo-sound-taxonomies.gps
   * ufo-all-taxonomies.gps
   * mlt-sound-taxonomies.gps
   * mlt-all-taxonomies.gps
   * ufo-mlt-sound-taxonomies.gps
-  * ufo-mlt-all-taxonomies.gps
 
 ## Requirements
 
